@@ -9,3 +9,4 @@ gbdk-n
 *.gb
 *.map
 dist/
+*.bak

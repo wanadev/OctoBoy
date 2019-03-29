@@ -4,6 +4,8 @@
 
 #include "./assets/wanadev_logo_l.tileset.h"
 #include "./assets/wanadev_logo_l.tilemap.h"
+#include "./assets/cube_bg_l.tileset.h"
+#include "./assets/cube_bg_l.tilemap.h"
 
 #define TRUE  1
 #define FALSE 0
@@ -67,6 +69,10 @@ void show_logo() {
 }
 
 void show_cube() {
+    set_bkg_data(0, CUBE_BG_TILESET_TILE_COUNT, CUBE_BG_TILESET);
+    set_bkg_tiles(0, 0, CUBE_BG_TILEMAP_WIDTH, CUBE_BG_TILEMAP_HEIGHT, CUBE_BG_TILEMAP);
+
+    fade_in();
     // TODO
 }
 

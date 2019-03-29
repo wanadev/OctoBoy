@@ -29,6 +29,7 @@ src/%.rel: src/%.c
 assets: assets_left assets_right
 
 assets_left:
+	# Wanadev Logo
 	img2gb tileset \
 		--output-c-file=src/assets/wanadev_logo_l.tileset.c \
 		--output-header-file=src/assets/wanadev_logo_l.tileset.h \
@@ -42,6 +43,20 @@ assets_left:
 		--name WANADEV_LOGO_TILEMAP \
 		src/assets/wanadev_logo_l.tileset.png \
 		./assets/wanadev_logo_l.png
+	# Cube BG
+	img2gb tileset \
+		--output-c-file=src/assets/cube_bg_l.tileset.c \
+		--output-header-file=src/assets/cube_bg_l.tileset.h \
+		--output-image=src/assets/cube_bg_l.tileset.png \
+		--name CUBE_BG_TILESET \
+		--deduplicate \
+		./assets/cube_bg_l.png
+	img2gb tilemap \
+		--output-c-file=src/assets/cube_bg_l.tilemap.c \
+		--output-header-file=src/assets/cube_bg_l.tilemap.h \
+		--name CUBE_BG_TILEMAP \
+		src/assets/cube_bg_l.tileset.png \
+		./assets/cube_bg_l.png
 
 assets_right:
 	img2gb tileset \
@@ -57,6 +72,20 @@ assets_right:
 		--name WANADEV_LOGO_TILEMAP \
 		src/assets/wanadev_logo_r.tileset.png \
 		./assets/wanadev_logo_r.png
+	# Cube BG
+	img2gb tileset \
+		--output-c-file=src/assets/cube_bg_r.tileset.c \
+		--output-header-file=src/assets/cube_bg_r.tileset.h \
+		--output-image=src/assets/cube_bg_r.tileset.png \
+		--name CUBE_BG_TILESET \
+		--deduplicate \
+		./assets/cube_bg_r.png
+	img2gb tilemap \
+		--output-c-file=src/assets/cube_bg_r.tilemap.c \
+		--output-header-file=src/assets/cube_bg_r.tilemap.h \
+		--name CUBE_BG_TILEMAP \
+		src/assets/cube_bg_r.tileset.png \
+		./assets/cube_bg_r.png
 
 gbdk-n-lib:
 	cd ./gbdk-n/ && make
@@ -76,3 +105,6 @@ clean:
 	rm -rf $(PROG)_*.sym
 	rm -rf $(PROG)_*.noi
 	rm -rf $(PROG)_*.lk
+
+clean_assets:
+	rm -rf src/assets/*
