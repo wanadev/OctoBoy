@@ -57,6 +57,13 @@ assets_left:
 		--name CUBE_BG_TILEMAP \
 		src/assets/cube_bg_l.tileset.png \
 		./assets/cube_bg_l.png
+	# Cube anim
+	img2gb tileset \
+		--output-c-file=src/assets/cube_l.tileset.c \
+		--output-header-file=src/assets/cube_l.tileset.h \
+		--output-image=src/assets/cube_l.tileset.png \
+		--name CUBE_TILESET \
+		./assets/cube_l/cube_l_*.png
 
 assets_right:
 	img2gb tileset \
@@ -86,6 +93,13 @@ assets_right:
 		--name CUBE_BG_TILEMAP \
 		src/assets/cube_bg_r.tileset.png \
 		./assets/cube_bg_r.png
+	# Cube anim
+	img2gb tileset \
+		--output-c-file=src/assets/cube_r.tileset.c \
+		--output-header-file=src/assets/cube_r.tileset.h \
+		--output-image=src/assets/cube_r.tileset.png \
+		--name CUBE_TILESET \
+		./assets/cube_r/cube_r_*.png
 
 gbdk-n-lib:
 	cd ./gbdk-n/ && make
