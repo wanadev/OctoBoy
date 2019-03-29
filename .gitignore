@@ -1,0 +1,11 @@
+gbdk-n
+*.rel
+*.lst
+*.sym
+*.asm
+*.ihx
+*.noi
+*.lk
+*.gb
+*.map
+dist/
