@@ -20,6 +20,10 @@
   <property name="length">150</property>
   <property name="eof">loop</property>
   <property name="resource">L.gif</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">1</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">50</property>
@@ -38,10 +42,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">-1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:duration">150</property>
   <property name="meta.media.frame_rate_num">50</property>
   <property name="meta.media.frame_rate_den">1</property>
@@ -59,6 +59,10 @@
   <property name="length">150</property>
   <property name="eof">loop</property>
   <property name="resource">R.gif</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">1</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">50</property>
@@ -77,10 +81,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">-1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:duration">150</property>
   <property name="meta.media.frame_rate_num">50</property>
   <property name="meta.media.frame_rate_den">1</property>
@@ -104,7 +104,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">18.04.3</property>
-  <property name="kdenlive:docproperties.position">0</property>
+  <property name="kdenlive:docproperties.position">31</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -214,10 +214,11 @@
     <property name="kdenlive_id">pan_zoom</property>
     <property name="tag">affine</property>
     <property name="kdenlive_ix">1</property>
-    <property name="transition.geometry">264/61:403x162:100</property>
+    <property name="transition.geometry">264/61:398x160:100</property>
     <property name="transition.distort">0</property>
     <property name="kdenlive:sync_in_out">1</property>
     <property name="kdenlive_info"/>
+    <property name="disable"/>
    </filter>
   </entry>
  </playlist>
@@ -270,10 +271,11 @@
     <property name="kdenlive_id">pan_zoom</property>
     <property name="tag">affine</property>
     <property name="kdenlive_ix">1</property>
-    <property name="transition.geometry">39/58:408x164:100</property>
+    <property name="transition.geometry">39/61:398x160:100</property>
     <property name="transition.distort">0</property>
     <property name="kdenlive:sync_in_out">1</property>
     <property name="kdenlive_info"/>
+    <property name="disable">0</property>
    </filter>
   </entry>
  </playlist>
