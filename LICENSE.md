@@ -20,6 +20,7 @@ The WANADEV name and logo are the property of WANADEV SARL, you are not allowed 
 
 The other files, source code in `src/` and images in `assets/` (except the one listed above) are distributed under the WTFPL license. You are free to use them as you wish.
 
+```
         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
 
@@ -33,3 +34,4 @@ The other files, source code in `src/` and images in `assets/` (except the one l
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
   0. You just DO WHAT THE FUCK YOU WANT TO.
+```
